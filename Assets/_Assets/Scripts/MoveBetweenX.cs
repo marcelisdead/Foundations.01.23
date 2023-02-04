@@ -17,34 +17,43 @@ public class MoveBetweenX : MonoBehaviour
     public float distance = 3f;
     public float speed = 1f;
 
-    Vector3 direction;
-    float xMin;
-    float xMax;
+    Vector3 _direction;
+    float _xMin;
+    float _xMax;
 
+    // Start is called before the first frame update
     private void Start()
     {
-        direction = Vector3.right;
-        xMin = transform.localPosition.x;
-        xMax = transform.localPosition.x + distance;
+        _direction = Vector3.right;
+        _xMin = transform.localPosition.x;
+        _xMax = transform.localPosition.x + distance;
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.localPosition += direction * speed * Time.deltaTime;
+        Vector3 movement = _direction * speed * Time.deltaTime;
+        transform.localPosition += movement;
 
-        if (transform.localPosition.x > xMax)
+        SetDirection();
+    }
+
+    void SetDirection()
+    {
+        if (transform.localPosition.x > _xMax)
         {
-            direction = Vector3.left;
+            _direction = Vector3.left;
         }
-        else if (transform.localPosition.x < xMin)
+        else if (transform.localPosition.x < _xMin)
         {
-            direction = Vector3.right;
+            _direction = Vector3.right;
         }
+        /*
         else
         {
             //x is in between max and min
             //so direction is ok for now
         }
+        */
     }
 }

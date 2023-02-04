@@ -7,8 +7,8 @@ using UnityEngine;
 /// 
 /// We will make this script to learn about variables and functions and Vector3 math.
 /// 
-/// Tip: To make your transform grow like a tree,
-/// place this script on a parent placed where it contacts the ground.
+/// Tip: To make your object grow like a tree,
+/// place this script on a parent positioned where your object contacts the ground.
 /// </summary>
 
 public class ScaleForever : MonoBehaviour
