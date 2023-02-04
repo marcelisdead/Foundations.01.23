@@ -8,8 +8,8 @@ using UnityEngine;
 /// 
 /// We'll use this script as an example of C# convention and syntax.
 /// 
-/// Tip: Becasue this script uses localPostion, if you give this transform a parent,
-/// you can rotate the parent to change direction we wag in.
+/// Tip: Becasue this script uses localPostion, if you give this transform 
+/// a parent, you can rotate the parent to change direction we wag in.
 /// </summary>
 
 public class MoveBetweenX : MonoBehaviour
@@ -35,16 +35,16 @@ public class MoveBetweenX : MonoBehaviour
         Vector3 movement = _direction * speed * Time.deltaTime;
         transform.localPosition += movement;
 
-        SetDirection();
+        SetDirection( transform.localPosition.x );
     }
 
-    void SetDirection()
+    void SetDirection(float currentXPosition)
     {
-        if (transform.localPosition.x > _xMax)
+        if (currentXPosition > _xMax)
         {
             _direction = Vector3.left;
         }
-        else if (transform.localPosition.x < _xMin)
+        else if (currentXPosition < _xMin)
         {
             _direction = Vector3.right;
         }
