@@ -16,7 +16,7 @@ public class HelloWorld : MonoBehaviour
     void Update()
     {
         frameCount = frameCount + 1;
-        string message = "Frame Count: ";
-        Debug.LogError(message + frameCount);
+        string coolMessage = "Frame Count: " + frameCount;
+        Debug.LogError(coolMessage);
     }
 }
