@@ -14,25 +14,25 @@ using UnityEngine;
 
 public class MoveBetweenX : MonoBehaviour
 {
-    public float moveDistance = 3f;
+    public float distance = 3f;
     public float moveSpeed = 1f;
 
-    Vector3 _currentDirection;
+    Vector3 _direction;
     float _xMin;
     float _xMax;
 
     // Start is called before the first frame update
     private void Start()
     {
-        _currentDirection = Vector3.right;
+        _direction = Vector3.right;
         _xMin = transform.localPosition.x;
-        _xMax = transform.localPosition.x + moveDistance;
+        _xMax = transform.localPosition.x + distance;
     }
 
     // Update is called once per frame
     void Update()
     {
-        Vector3 movement = _currentDirection * moveSpeed * Time.deltaTime;
+        Vector3 movement = _direction * moveSpeed * Time.deltaTime;
         transform.localPosition += movement;
 
         SetDirection( transform.localPosition.x );
@@ -42,17 +42,17 @@ public class MoveBetweenX : MonoBehaviour
     {
         if (currentXPosition > _xMax)
         {
-            _currentDirection = Vector3.left;
+            _direction = Vector3.left;
         }
         else if (currentXPosition < _xMin)
         {
-            _currentDirection = Vector3.right;
+            _direction = Vector3.right;
         }
         /*
         else
         {
-            X is in between min and max so direction is ok for now.
-            This is in a comment so the computer doesnt see it.
+            //x is in between max and min
+            //so direction is ok for now
         }
         */
     }
