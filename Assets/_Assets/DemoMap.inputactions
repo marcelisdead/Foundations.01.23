@@ -1,0 +1,162 @@
+{
+    "name": "DemoMap",
+    "maps": [
+        {
+            "name": "Keyboard",
+            "id": "aacb39a5-9d5b-45c5-aeee-2434733da816",
+            "actions": [
+                {
+                    "name": "TEstAction",
+                    "type": "Value",
+                    "id": "40a092bb-06a3-4164-81ea-41de9c5d1a20",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "2D Vector",
+                    "id": "6f9da4ac-2d1e-4928-a7d2-f10da3b8fd72",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TEstAction",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "167a7a84-ac18-4b1b-aff8-9f1fddd431cb",
+                    "path": "<Keyboard>/upArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TEstAction",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "172dd77d-8805-4d64-810c-a62bd18b5ef9",
+                    "path": "<Keyboard>/downArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TEstAction",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "bb58f1de-f3ac-48f1-8d20-360eae6ccd62",
+                    "path": "<Keyboard>/leftArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TEstAction",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "33916d7a-d99b-4800-a10a-2c3599f547b4",
+                    "path": "<Keyboard>/rightArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TEstAction",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                }
+            ]
+        },
+        {
+            "name": "mouse",
+            "id": "6a3629a8-d252-45b9-a8f0-0c74dcfd2b22",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "8c42caea-55fd-4ad2-ad82-4862ccfe0a35",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "ebe1579c-bf2b-48a0-afa4-3bb020dc59ce",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "gamepad",
+            "id": "b12aeaff-0dae-4ddc-ac88-bb2b5158875d",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "41b26ac7-4e23-4bf5-ad70-7c746b0a226b",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "0991f5a4-4c32-4731-9997-da21790ea402",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "steerringwheel",
+            "id": "ad93294c-d3d4-48c7-863c-8a3f818d0471",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "de1900d7-64a3-4b86-8f84-da2d152ae7d4",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "27cc82fa-161c-4928-b0c0-86e054d6973a",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

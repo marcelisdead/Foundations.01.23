@@ -6,6 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: d1c3109bdb54ad54c8a2b2838528e640
-  m_configObjects: {}
+    path: Assets/_Assets/Scenes/VRScene.unity
+    guid: 89603018f67ed36488930d1edc676add
+  m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 96af5ccd6c6c93341857808345ac4ce3, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: f0bcdc1fdbdc46d4f87b3c47cdc95e61, type: 2}
